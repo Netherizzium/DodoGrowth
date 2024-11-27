@@ -29,19 +29,23 @@ html {
 .center-buttons {
   display: flex;
   margin: 0 auto;
+  gap: 10px;
 }
 
 .center-buttons a {
   text-decoration: none;
   color: white;
-  font-size: 16px;
+  font-size: 18px;
   padding: 5px 10px;
+  background-color: gray;
+  border-radius: 8px;
+  gap: 10px;
   transition: background-color 0.3s;
 }
 
 .center-buttons a:hover {
   background-color: #555;
-  border-radius: 5px;
+  border-radius: 8px;
 }
 
 .tbutton {
@@ -68,7 +72,7 @@ html {
 }
 
 h1 {
-    font-size: 2.4em;
+    font-size: 2.6em;
     font-weight: bold;
     margin: 35px auto;
     text-align: center;
@@ -76,7 +80,7 @@ h1 {
 }
 
 h2 {
-    font-size: 1.4em;
+    font-size: 1.6em;
     font-weight: bold;
     margin-top: 35px auto;
     text-align: center;
@@ -85,12 +89,12 @@ h2 {
 
 .highlight {
     color: #000; 
-    font-size: 1.4em; 
+    font-size: 1.6em; 
     font-weight: bold;
 }
 
 p {
-    font-size: 1em;
+    font-size: 1.2em;
     color: #003566;
     text-align: center;
 }
@@ -261,20 +265,19 @@ p {
 }
 
 .reviews-container {
-    background-color: #001d3d;
     color: white;
     margin: 0 auto;
-    padding: 20px;
     border-radius: 10px;
     text-align: center;
-    width: 80%;
-    max-width: 750px;
+    width: 100%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .reviews-container h2 {
-    margin-bottom: 15px;
-    font-size: 24px;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    background-color: #001D3D;
+    color: #fff;
 }
 
 .media {
@@ -282,6 +285,7 @@ p {
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
+    background-color: #001D3D;
 }
 
 .media img {
@@ -301,28 +305,31 @@ p {
 .vids {
     align: auto;
     text-align: center;
-    padding: 20px;
 }
 
 .long-form h1 {
-    color: black; 
+    color: #fff; 
     font-size: 2.5em;
     margin-bottom: 20px;
+    width: 100%;
+    background-color: #001D3D;
 }
 
 .short-form h1 {
-    color: black;
+    color: #fff;
     font-size: 2.5em;
-    margin: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    background-color: #001D3D;
 }
 
 .jamil {
     margin: auto;
     background-color: #001D3D; 
-    padding: 20px;
     border-radius: 10px;
     text-align: center;
-    width: auto;
+    padding: 20px;
+    width: 80%;
     max-width: 600px;
     margin-bottom: 40px;
 }
@@ -368,7 +375,7 @@ p {
     padding: 20px;
     border-radius: 10px;
     text-align: center;
-    width: auto;
+    width: 80%;
     max-width: 600px;
 }
 
@@ -559,7 +566,7 @@ p {
 }
 
 .footer {
-  background-color: rgba(128, 128, 128, 0.7); /* Grey with 70% opacity */
+  background-color: rgba(128, 128, 128, 0.7); 
   color: white;
   text-align: center;
   padding: 20px 10px;
@@ -590,6 +597,7 @@ p {
   text-decoration: none;
   color: white;
   padding: 5px 10px;
+  margin-right: 7px;
   border: 2px solid white;
   border-radius: 5px;
   transition: background-color 0.3s, color 0.3s;
