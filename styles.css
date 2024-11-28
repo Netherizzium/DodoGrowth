@@ -58,7 +58,10 @@ html {
   cursor: pointer;
   border-radius: 5px;
   transition: background-color 0.3s;
-  margin: 0; 
+  margin: 0;
+  white-space: nowrap;
+  display: inline-block;
+  text-align: center;
 }
 
 .tbutton:hover {
@@ -273,33 +276,104 @@ p {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.reviews-container h2 {
-    margin-bottom: 20px;
-    font-size: 2.5em;
+.textnshit {
     background-color: #001D3D;
     color: #fff;
+    text-align: center;
+}
+
+.textnshit h1 {
+	margin-bottom: 2px;
+}
+
+.media p {
+	margin: 0 auto;
+    margin-bottom: 5px;
+    font-size: 1em;
+    background-color: #001D3D;
+    color: #fff;
+    text-align: center;
 }
 
 .media {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
+    gap: 20px;
     background-color: #001D3D;
+    padding: 20px;
 }
 
 .media img {
-    max-width: 350px;
+    flex: 1 1 calc(25% - 20px);
+    max-width: calc(25% - 20px);
     height: auto;
+    margin: 10px;
     border-radius: 5px;
     object-fit: contain;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .media img {
+        flex: 1 1 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .media img {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+
+.media img:hover {
+    transform: scale(1.05);
 }
 
 .media video {
     width: 200px;
     height: auto;
+    margin-bottom: 10px;
     border-radius: 5px;
     object-fit: cover;
+}
+
+#fullscreen-viewer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#fullscreen-viewer.hidden {
+    display: none;
+}
+
+#fullscreen-image {
+    max-width: 90%;
+    max-height: 90%;
+    border: 2px solid white;
+}
+
+#blurred-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px);
+    z-index: -1;
 }
 
 .vids {
