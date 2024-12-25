@@ -249,9 +249,6 @@ p {
     margin: 20px auto;
     border-radius: 8px;
     background-color: #001D3D;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .service-box-centered h3 {
